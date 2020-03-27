@@ -1,0 +1,64 @@
+body{
+    background-color: olive;
+}
+
+canvas{
+    margin-left: 40%;
+    margin-top: 70px;
+    background-image: url("background.jpg");
+    width: 300px;
+    height: 450px;
+    background-clip: border-box;
+    background-size: cover;
+}
+.button {
+    display: inline-block;
+    background-color: coral;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid orangered;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.myStyle{
+    margin-left: 62%;
+    margin-top: -450px;
+}
+.button:hover{
+    background-color: cornflowerblue;
+    color: coral;
+}
+.scoreStyle{
+    margin-left: 32%;
+    margin-top: -60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
